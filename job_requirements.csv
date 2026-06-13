@@ -1,0 +1,16 @@
+job_id,company_type,domain,required_skills,min_experience_level,ideal_prep_time_weeks
+JOB001,Service-based MNC,Web Development,"MongoDB, Git, REST APIs, TypeScript",Fresher,10
+JOB002,Mid-size Product,Embedded Systems,"Hardware Debugging, ARM Cortex, Embedded C",6 Months Project Experience,15
+JOB003,Early-stage Startup,Embedded Systems,"ARM Cortex, I2C/SPI/UART, Hardware Debugging, Embedded C, RTOS",Internship,12
+JOB004,Service-based MNC,VLSI,"Linux, TCL scripting, SystemVerilog",Internship,12
+JOB005,Core Engineering Firm,Embedded Systems,"ARM Cortex, Embedded C, Hardware Debugging, RTOS, I2C/SPI/UART",Internship,15
+JOB006,Service-based MNC,Embedded Systems,"RTOS, Hardware Debugging, I2C/SPI/UART, ARM Cortex, Embedded C",Internship,16
+JOB007,Service-based MNC,Web Development,"MongoDB, Node.js, REST APIs, TypeScript",Internship,13
+JOB008,Mid-size Product,VLSI,"SystemVerilog, Linux, STA basics, ASIC Design flow, Verilog",Internship,16
+JOB009,Early-stage Startup,IoT,"C/C++, MQTT/CoAP, ESP32/Raspberry Pi, AWS IoT",Fresher,11
+JOB010,Core Engineering Firm,Web Development,"Node.js, REST APIs, React",Internship,14
+JOB011,Early-stage Startup,AI-ML,"SQL, Pandas, NLP basics, Scikit-Learn, Python",6 Months Project Experience,12
+JOB012,Early-stage Startup,Web Development,"Node.js, TypeScript, REST APIs, React",Fresher,13
+JOB013,Core Engineering Firm,AI-ML,"SQL, Scikit-Learn, NLP basics, PyTorch",6 Months Project Experience,16
+JOB014,Early-stage Startup,VLSI,"STA basics, SystemVerilog, TCL scripting, Linux, ASIC Design flow",6 Months Project Experience,14
+JOB015,Service-based MNC,IoT,"MQTT/CoAP, ESP32/Raspberry Pi, Python, C/C++",Fresher,12

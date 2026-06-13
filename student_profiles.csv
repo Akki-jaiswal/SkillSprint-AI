@@ -1,0 +1,41 @@
+student_id,branch,semester,cgpa,current_skills,completed_projects,target_domain
+STU001,CSE,4,8.65,"Python, Java, C++, JavaScript",E-commerce landing page clone using React and Firebase,AI-ML
+STU002,ECE,4,6.59,"Verilog, Microprocessors, C, VHDL",Temperature Monitoring System with ESP8266 and ThingSpeak,IoT
+STU003,ECE,4,7.8,"C, Python, MATLAB, Microprocessors, Embedded C",Temperature Monitoring System with ESP8266 and ThingSpeak,Embedded Systems
+STU004,ECE,4,6.77,"Arduino, IoT Basics, VHDL",Smart Dustbin using Arduino and Ultrasonic Sensor,IoT
+STU005,ECE,6,6.86,"C++, Microprocessors, VHDL, MATLAB, Arduino, Embedded C",Traffic Light Controller designed using Verilog,IoT
+STU006,CSE,6,6.7,"HTML/CSS, C++, Python, SQL",Library Management System using C++ and file handling,Web Development
+STU007,ECE,5,8.34,"Python, Arduino, Microprocessors, C++, Embedded C",Traffic Light Controller designed using Verilog,IoT
+STU008,CSE,6,8.34,"Java, React (Basic), SQL, Git",E-commerce landing page clone using React and Firebase,AI-ML
+STU009,ECE,4,7.16,"Arduino, MATLAB, VHDL",Smart Dustbin using Arduino and Ultrasonic Sensor,Embedded Systems
+STU010,ECE,4,8.4,"Embedded C, Python, VHDL, C++, MATLAB, IoT Basics",Basic ALU design simulated in Xilinx ISE,VLSI
+STU011,ECE,6,7.66,"Python, Microprocessors, Embedded C, C",Smart Dustbin using Arduino and Ultrasonic Sensor,Embedded Systems
+STU012,CSE,6,6.96,"Git, C++, SQL, Python, HTML/CSS, React (Basic)",E-commerce landing page clone using React and Firebase,Web Development
+STU013,CSE,6,8.59,"JavaScript, C++, HTML/CSS, Python, DSA (Basic)",Simple Chatbot using basic NLTK and Python,AI-ML
+STU014,ECE,6,8.71,"VHDL, Microprocessors, Verilog",Temperature Monitoring System with ESP8266 and ThingSpeak,VLSI
+STU015,CSE,6,9.27,"Git, JavaScript, React (Basic)",Library Management System using C++ and file handling,AI-ML
+STU016,ECE,5,7.19,"IoT Basics, C++, Microprocessors, Arduino",Home Automation using Bluetooth and 8051 Microcontroller,Embedded Systems
+STU017,CSE,4,8.41,"HTML/CSS, DSA (Basic), SQL, C++",E-commerce landing page clone using React and Firebase,IoT
+STU018,CSE,6,7.4,"React (Basic), DSA (Basic), Git, C, C++","Basic Portfolio Website using HTML, CSS, and JS",AI-ML
+STU019,ECE,4,8.21,"IoT Basics, Verilog, C, Embedded C",Smart Dustbin using Arduino and Ultrasonic Sensor,Embedded Systems
+STU020,CSE,4,8.99,"DSA (Basic), Python, HTML/CSS",Simple Chatbot using basic NLTK and Python,AI-ML
+STU021,CSE,6,9.21,"Python, React (Basic), SQL, C++, C, JavaScript",Simple Chatbot using basic NLTK and Python,Web Development
+STU022,ECE,5,7.85,"C++, C, MATLAB",Traffic Light Controller designed using Verilog,Embedded Systems
+STU023,CSE,4,7.05,"Java, SQL, Git, React (Basic), Python, C++",Library Management System using C++ and file handling,Web Development
+STU024,CSE,4,8.39,"C++, Python, Java",Simple Chatbot using basic NLTK and Python,Web Development
+STU025,ECE,4,9.01,"Python, MATLAB, C",Home Automation using Bluetooth and 8051 Microcontroller,VLSI
+STU026,ECE,5,7.73,"Python, Verilog, VHDL, C++, C, Embedded C",Basic ALU design simulated in Xilinx ISE,Embedded Systems
+STU027,ECE,4,6.65,"Microprocessors, IoT Basics, Python, C, VHDL, MATLAB",Temperature Monitoring System with ESP8266 and ThingSpeak,Embedded Systems
+STU028,CSE,6,9.0,"C++, Python, C, HTML/CSS, React (Basic), DSA (Basic)",E-commerce landing page clone using React and Firebase,IoT
+STU029,ECE,5,7.09,"Verilog, VHDL, MATLAB, C++, Arduino",Traffic Light Controller designed using Verilog,VLSI
+STU030,ECE,4,6.53,"C++, Microprocessors, Verilog",Basic ALU design simulated in Xilinx ISE,VLSI
+STU031,CSE,5,9.05,"JavaScript, HTML/CSS, Java, Python",E-commerce landing page clone using React and Firebase,IoT
+STU032,ECE,6,9.35,"Microprocessors, VHDL, C++",Temperature Monitoring System with ESP8266 and ThingSpeak,VLSI
+STU033,CSE,4,8.65,"HTML/CSS, Git, Python, JavaScript",Weather App fetching data from public APIs using Python,AI-ML
+STU034,ECE,6,7.92,"C++, MATLAB, VHDL",Smart Dustbin using Arduino and Ultrasonic Sensor,Embedded Systems
+STU035,ECE,4,8.35,"Python, Embedded C, MATLAB, VHDL, C",Smart Dustbin using Arduino and Ultrasonic Sensor,Embedded Systems
+STU036,CSE,6,6.6,"Git, DSA (Basic), Java, Python, C++",Library Management System using C++ and file handling,Web Development
+STU037,ECE,4,9.11,"Verilog, C++, Arduino, MATLAB",Basic ALU design simulated in Xilinx ISE,VLSI
+STU038,CSE,4,9.01,"SQL, C, Java, JavaScript",Weather App fetching data from public APIs using Python,Web Development
+STU039,CSE,5,6.96,"SQL, C, React (Basic)","Basic Portfolio Website using HTML, CSS, and JS",AI-ML
+STU040,ECE,5,7.39,"Verilog, C, IoT Basics, Embedded C",Traffic Light Controller designed using Verilog,VLSI
