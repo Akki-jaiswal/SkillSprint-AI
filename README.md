@@ -1,39 +1,82 @@
-# 🎯 SkillSprint AI
-**Resource-Aware Semantic Job Matching & Curriculum Engine**
-
+# 🎯 SkillSprint AI: Life & Career Decision Simulator
+**Undergraduate Track | AI for Life, Learning & Work**
 *Built for the USAII Global AI Hackathon 2026*
 
+SkillSprint AI is an intelligent, constraint-aware decision support system designed as a "Second Brain" to help students navigate high-stakes life choices: choosing between an **Industry Placement**, pursuing **Graduate School**, or going down a **Self-Taught / Indie Creator** path.
+
+By modeling a user's academic constraints, weekly study hours, risk profile, and physical hardware resources, the simulator visualizes tradeoffs, represents market uncertainty honestly, and guides the user toward a committed decision and actionable roadmap.
+
+---
+
 ## 📌 The Problem
-Engineering students often struggle to translate academic coursework into industry-ready skills. Standard matching algorithms rely on brittle keyword filters, and generic coding bootcamps ignore the physical constraints of a student's reality (heavy lab schedules, lack of cloud GPUs, or access to specific hardware).
+Engineering students face overloaded choices and high-stakes decisions under conditions of incomplete information. Most career tools either oversimplify choices into static pros/cons lists, or overwhelm students with massive databases of jobs. Standard search algorithms use rigid keyword match filters that ignore:
+1. **Semantic Equivalence:** A student's project on a "Temperature Monitoring System with ESP8266" is contextually equivalent to "embedded microcontrollers," but traditional keyword engines mark this as a total mismatch.
+2. **Real-Life Constraints:** Recommending an intensive coding sprint ignores academic workloads, exam seasons, and lack of essential resources (such as not owning microcontrollers or not having cloud GPU access).
 
-## 💡 The Solution
-SkillSprint AI is an intelligent, resource-aware career bridging platform. It doesn't just score a candidate against a job description; it acts as an autonomous career coach. 
+---
 
-By taking into account a student's weekly availability, academic load, and physical hardware resources, it generates a highly personalized, complexity-weighted 14-week learning sprint to close the exact semantic skill gaps standing between them and their target role.
+## 🧠 AI Architecture & Decision Pipeline
 
-## 🚀 Key Features
-* **Hybrid Matching Engine:** Filters opportunities using hard structural metadata (domain, experience level) before applying soft semantic vector matching.
-* **Semantic Skill Gap Analysis:** Utilizes NLP (`all-MiniLM-L6-v2`) to recognize conceptual skill overlaps (e.g., matching "React (Basic)" to a "React" requirement) rather than failing on rigid string subtractions.
-* **Resource-Aware Curriculum:** Dynamically alters the 14-week sprint based on physical constraints. If a student owns an ESP32 board, the AI shifts theoretical IoT modules into bare-metal hardware debugging. 
-* **Responsible AI Guardrails:** Built-in confidence thresholds prevent the system from hallucinating career paths; if a profile falls below a 40% match affinity, the timeline engine suspends execution and advises foundational bridging.
+The application models decisions using a structured **Data → AI Reasoning → Interactive Tradeoff → Action** pipeline:
 
-## 🧠 Technical Architecture
-* **Frontend UI:** Streamlit
-* **Language Models:** Hugging Face `SentenceTransformers` (`all-MiniLM-L6-v2`)
-* **Data Processing:** Pandas, NumPy
+```
+[Input: Student Profile & Constraints] 
+      │
+      ▼
+[Hugging Face Encoder (all-MiniLM-L6-v2)] ──► Computes Semantic Skill Similarities
+      │
+      ▼
+[Multi-Path Constraint Engine] ──────────► Propagates study hours, academic load, & hardware resources
+      │
+      ▼
+[Plotly Comparison Dashboard] ───────────► Visualizes Success Chance (± Range), Prep Time, & Stress Index
+      │
+      ▼
+[Human-in-the-Loop Lock] ────────────────► User logs final choice and rationale
+      │
+      ▼
+[30/60/90-Day Execution Plan] ───────────► Breaking inertia with "First Step" within 24 Hours
+```
+
+### 🔬 Why AI/NLP over a Rules Engine? (Judge's Lens)
+- **Unstructured Matching:** Resumes and project descriptions contain rich, free-form text. A rules engine fails on spelling differences, acronyms, and synonyms. 
+- **Semantic Overlaps:** Our pipeline embeds skill sets into a vector space using a cached **SentenceTransformer (`all-MiniLM-L6-v2`)** model. Cosine similarity is calculated to match skills at a `0.80` confidence threshold, automatically mapping "React (Basic)" to a "React" requirement, and "C" / "Embedded C" to microprocessor domains.
+- **Probabilistic Timelines:** Rules engines are binary. Our system models preparation timelines and success chances as continuous variables scaled dynamically by active resource constraints.
+
+---
+
+## 🛡️ Responsible AI Guardrails
+
+1. **Realistic Risk (Over-Reliance):** 
+   - A major risk of decision-support AI is that users treat success probabilities as definitive prophecies, creating false confidence or unnecessary defeatism.
+2. **Concrete Mitigation (Uncertainty Framing):**
+   - Success percentages are modeled and displayed with statistical uncertainty bounds (e.g., `78% ± 6%`), indicating that external variables (economic shifts, admission curves) are outside the AI's modeling parameters.
+3. **Domain Parity Safeguard:**
+   - If a student's profile exhibits less than a `45%` match affinity with target industry roles, the system triggers a warning block advising foundational bridging before applying to jobs.
+4. **Human-in-the-Loop Design:**
+   - The AI does *not* make the final career decision. The system remains strictly an analysis input. The student must manually select their final path, write a personalized rationale (weighting qualitative interests, family circumstances, and passions), and lock it in to generate the execution plan.
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+* **UI Framework:** Streamlit (Vanilla style)
+* **NLP & Vector Embeddings:** SentenceTransformers (`all-MiniLM-L6-v2`)
 * **Vector Math:** Scikit-Learn (Cosine Similarity)
-* **Visualization:** Plotly Express
+* **Data Processing:** Pandas, NumPy
+* **Interactive Charting:** Plotly Express / Graph Objects
 
-*Note: For the purposes of evaluating this MVP while adhering to strict data privacy and PII protection standards, all student profiles and job requirement datasets used in this repository are synthetic.*
+*Note: In compliance with student data privacy and PII protection standard regulations, all student profiles and job requirement datasets utilized are synthetic, loaded locally from `student_profiles.csv` and `job_requirements.csv`.*
 
-## ⚙️ How to Run Locally
+---
 
-1. **Clone the repository:**
+## ⚙️ Running Locally
+
+1. **Install Dependencies:**
    ```bash
-   git clone [https://github.com/Punya22/SkillSprint-AI.git](https://github.com/Punya22/SkillSprint-AI.git)
-   cd SkillSprint-AI
-2. **Install Dependencies:**
-pip install -r requirements.txt
-3. **Launch the application:**
-streamlit run app.py
-**The application will automatically open in your default web browser**
+   pip install -r requirements.txt
+   ```
+2. **Run the Streamlit App:**
+   ```bash
+   streamlit run app.py
+   ```
+3. The app will launch in your default web browser (typically at `http://localhost:8501`).
